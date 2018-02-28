@@ -47,7 +47,7 @@ def contact():
         flash("Your message has been sent")
         return render_template('home.html')
     else:
-        return render_template('contact.html',form=form,addtext='error: all fields are required')
+        return render_template('contact.html',form=form,addtext='(Required)')
         
 @app.after_request
 def add_header(response):

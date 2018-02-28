@@ -5,19 +5,24 @@
 <p> Complete the form in order to contact the site owners</p>
 <form method="POST">
     {{form.csrtoken}}
-    <p>{{addtext}}</p>
-    {{form.name.label}}
+    
+    {{form.name.label}}<span>{{addtext}}</span>
     <p>Please enter your full name</p>
     {{form.name}}
-    {{form.email.label}}
+    <br><br>
+    {{form.email.label}}<span>{{addtext}}</span>
     <p>Please enter your email address</p>
     {{form.email}}
-    {{form.subject.label}}
+    <br><br>
+    {{form.subject.label}}<span>{{addtext}}</span>
     <p>Please enter the subject of your message</p>
     {{form.subject}}
-    {{form.msg.label}}
+    <br><br>
+    {{form.msg.label}}<span>{{addtext}}</span>
     <p>Please enter the message you would like to send</p>
     {{form.msg}}
+    <br>
+    <br>
     <button>Send</button>
 </form>
 {% endblock %}
